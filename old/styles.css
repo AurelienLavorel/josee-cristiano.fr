@@ -1,0 +1,6 @@
+h1 {
+    color: red;
+}
+div p.colorDiff {color: blue;}
+p span {font-weight: bold}
+p span.underline {text-decoration: underline;}
