@@ -17,7 +17,7 @@
                         if (!strpos($img, '.txt') && $img != '.' && $img != '..') :
                             ?>
                     <div class="col-lg-6 col-lg-3">
-                        <a href="<?php echo $webPath; ?>" class="fancybox thumbnail" title="<?php echo str_replace('"', '\"', file_get_contents('.' . $webPath . '.txt')); ?>">
+                        <a href="<?php echo $webPath; ?>" class="fancybox thumbnail" title="<?php echo utf8_encode(str_replace('"', '\"', file_get_contents('.' . $webPath . '.txt'))); ?>">
                             <img data-src="holder.js/100%x170" alt="100%x180" src="<?php echo $webPath; ?>" data-holder-rendered="true" style="height: 170px; width: 100%; display: block;">
                         </a>
                     </div>
