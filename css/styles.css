@@ -215,8 +215,13 @@ span.footerContact {
     margin-top: -5px;
 }
 
-span.footerContact a {
+span.footerContact a, h3.blue {
     color: #528DFF;
+}
+
+h3.blueleft {
+    color: #528DFF;
+    margin-left: -27%;
 }
 
 img {

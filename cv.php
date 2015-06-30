@@ -15,10 +15,13 @@
             <div class="inner content">
                 <div class="row-fluid">
                     <div class="span10">
-                        <p>Bonjour, je suis Josée Cristiano, étudiante en graphisme.</p>
+                        <p>Bonjour, je suis Josée Cristiano. Bienvenue sur mon site. Actuellement étudiante motivée par le graphisme et la photographie, j'ai décidé de vous faire part de mes différents projets.</p>
                         <p>&nbsp;</p>
-                        <h3>Suite Logicielle</h3>
                         <table class="table borderless cv-table">
+                            <tr>
+                                <td class="col-md-2">&nbsp;</td>
+                                <td><h3 class="blueleft">Suite Logicielle</h3></td>
+                            </tr>
                             <tr>
                                 <td class="col-md-4">Illustrator</td>
                                 <td><img src="/img/comp/illustrator.png" /></td>
@@ -36,8 +39,11 @@
                                 <td><img src="/img/comp/premiere.png" /></td>
                             </tr>
                         </table>
-                        <h3>Parcours de Formation</h3>
                         <table class="table borderless cv-table">
+                            <tr>
+                                <td class="col-md-2">&nbsp;</td>
+                                <td><h3 class="blue">Parcours de Formation</h3></td>
+                            </tr>
                             <tr>
                                 <td class="col-md-2">2013</td>
                                 <td>Début du Bachelor<br />En même temps que le BTS</td>
@@ -55,8 +61,11 @@
                                 <td>Baccalauréat professionnel comptabilité, mention AB<br />Lycée Sainte Famille, La-Roche-sur-Foron (74)</td>
                             </tr>
                         </table>
-                        <h3>Parcours Professionel</h3>
                         <table class="table borderless cv-table">
+                            <tr>
+                                <td class="col-md-2">&nbsp;</td>
+                                <td><h3 class="blue">Parcours Professionel</h3></td>
+                            </tr>
                             <tr>
                                 <td class="col-md-2">2014</td>
                                 <td>Agence Kiwee Rouge, Lyon (69) - 1 mois<br />Stage de formation en graphisme</td>
