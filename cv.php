@@ -15,7 +15,9 @@
             <div class="inner content">
                 <div class="row-fluid">
                     <div class="span10">
-                        <p>Bonjour, je suis Josée Cristiano. Bienvenue sur mon site. Actuellement étudiante motivée par le graphisme et la photographie, j'ai décidé de vous faire part de mes différents projets.</p>
+                        <p>Bonjour, je suis Josée Cristiano. Bienvenue sur mon site.</p>
+                        <p>Actuellement étudiante motivée par le graphisme et la photographie,</p>
+                        <p>j'ai décidé de vous faire part de mes différents projets.</p>
                         <p>&nbsp;</p>
                         <table class="table borderless cv-table">
                             <tr>
