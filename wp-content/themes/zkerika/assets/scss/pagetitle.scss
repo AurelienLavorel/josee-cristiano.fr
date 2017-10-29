@@ -1,0 +1,59 @@
+#cms-page-title-wrapper{
+	position: relative;
+	background-color: $accent_color;
+	background-image: url(../images/pagetitle/bg-pagetitle.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+	padding-top: 180px;
+	padding-bottom: 67px;
+	&:before{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+		display: block;
+		z-index: 0;
+	}
+	> .cms-page-title {
+		padding-left: 15px;
+		padding-right: 15px;
+		position: relative;
+		z-index: 1;
+	}
+	.space{
+		height: 122px;
+	}
+	@media (max-width: 1024px){
+		background-attachment: scroll !important;
+	}
+	/* Main Content when has Page title */
+	+ #cms-main{
+		#content-area{
+			margin-top: 120px;
+		}
+	}
+}
+
+.cms-page-title-text{
+	color: $page_title_color;
+	font-size: 40px;
+	font-family: $ExtraFont;
+	font-weight: normal;
+	line-height: 130%;
+}
+
+#cms-breadcrumb{
+	color: $breadcrumb_color;
+	font-size: 11px; 
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-weight: 600;
+	a{
+		color: $breadcrumb_color;
+		&:hover{
+			color: $breadcrumb_color_hover;
+		}
+	}
+}

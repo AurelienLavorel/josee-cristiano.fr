@@ -1,0 +1,105 @@
+
+$avatar_size: 100px;
+
+#comments{
+	padding: 30px 0 0 0;
+	margin: 30px 0 0 0;
+	border-top: 1px solid #ccc;
+	.comments-title,
+	#reply-title{
+		margin: 0 0 30px 0;
+	}
+}
+.comment-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	.comment,
+	.pingback{
+		padding: 30px 0 0 0;
+		margin:  30px 0 0 0;
+		border-top: 1px solid #ccc;
+		&.depth-1:first-child{
+			padding-top: 0;
+			margin-top: 0;
+			border-top: none;
+		}
+		.comment{
+			padding-left: $avatar_size;
+		}
+		&.depth-5 .comment{
+			padding-left: 0;
+		}
+		/* max 5 level deep */
+		&.depth-5 + .depth-5{
+			padding-left: 0;
+			margin-left: $avatar_size;
+		}
+	}
+	.comment-avatar{
+		float: left;
+		&:empty + .comment-content{
+			padding-left: 0;
+		}
+	}
+	.comment-content{
+		padding-left: #{$avatar_size + 20px};
+		.author-name{
+			margin: 0;
+		}
+	}
+	.comment-footer{
+		margin: 0 -10px;
+		> a{
+			margin: 0 10px;
+		}
+	}
+	@media (max-width: $screen-sm-max){
+		.comment .comment{
+			padding-left: 30px;
+		}
+		.comment-avatar{
+			max-width: 30px;
+		}
+		.comment-content{
+			padding-left: 40px;
+		}
+		&.depth-5 .comment{
+			padding-left: 0;
+		}
+		/* max 5 level deep */
+		.comment.depth-5 + .depth-5{
+			margin-left: 30px;
+		}
+	}
+	@media (max-width: $screen-xxs-max){
+		.comment .comment{
+			padding-left: 15px;
+		}
+		&.depth-5 .comment{
+			padding-left: 0;
+		}
+		/* max 5 level deep */
+		.comment.depth-5 + .depth-5{
+			margin-left: 15px;
+		}
+	}
+
+	/* respond */
+	+ #respond{
+		padding: 30px 0 0 0;
+		margin: 30px 0 0 0;
+		border-top: 1px solid #ccc;
+	}
+}
+form.comment-form{
+	textarea,
+	input{
+		width: 100%;
+	}
+}
+
+.no-comments{
+	margin-top: 30px;
+	color: red;
+}

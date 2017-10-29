@@ -1,0 +1,97 @@
+.wp-caption,
+.wp-caption-text,
+.sticky,
+.screen-reader-text,
+.gallery-caption,
+.bypostauthor {
+	visibility: visible;
+}
+
+/* Image */
+img{
+	height: initial;
+	&.alignleft{
+		margin: 0 15px 10px 0;
+		float: left;
+	}
+	&.alignright{
+		margin: 0 0 10px 15px;
+		float: right;
+	}
+	&.aligncenter{
+		margin: 0 0 10px 0;
+	}
+	&[width="0"],
+	&[height="0"],
+	&[width="1"],
+	&[height="1"]{
+		width: 100%;
+		height: auto;
+	}
+}
+/* WP Caption */
+[id*="attachment_"],
+[id^="attachment_"]{
+	margin-bottom: 30px !important;
+}
+.wp-caption{
+	max-width: 100%;
+	&.alignleft{
+		margin: 0 15px 10px 0;
+		float: left;
+		.wp-caption-text{
+			margin-right: 10px;
+		}
+	}
+	&.alignright{
+		margin: 0 0 10px 15px;
+		float: right;
+		.wp-caption-text{
+			margin-left: 10px;
+		}
+	}
+	&.aligncenter{
+		margin: 0 auto;
+		.wp-caption-text{
+			margin: 0 5px;
+		}
+	}
+}
+.wp-caption-text{
+	background-color: #eee;
+	font-style: italic;
+	padding: 10px;
+}
+/* Wordpress Gallery */
+div[id*="gallery-"],
+div[id^="gallery-"]{
+	margin: -5px -5px 30px -5px !important;
+	.gallery-item{
+		margin: 0 !important;
+		padding: 5px;
+	}
+}
+/* Video / audio / iframe */
+video, audio, iframe{
+	max-width: 100%;
+}
+
+/* Boostrap Carousel */
+.carousel {
+	.carousel-item{
+		cursor: zoom-in;
+	}
+	a[class*="carousel-control-"]{
+		
+		height: 40px;
+		line-height: 40px;
+		color: $white;
+		text-align: center;
+		background-color: $primary_color;
+		@include vertical-align();
+		width: 40px;
+		&:hover{
+			background-color: $accent_color;
+		}
+	}
+}

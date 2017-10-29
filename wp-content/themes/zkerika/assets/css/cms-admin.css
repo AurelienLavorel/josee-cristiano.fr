@@ -1,0 +1,14 @@
+img{max-width:100%}.img-select ul{margin:0 -10px;display:block;overflow:hidden}.img-select li{float:left;width:calc(50% - 20px);padding:10px;margin:0;display:block}.img-select li:nth-child(2n+1){clear:left}.img-select li img{border:2px solid #ccc}.img-select li.active img{border-color:#305288}.redux-container{overflow:inherit!important}
+#zkerika_theme_options-zkerika_archive_content_layout.redux-container-image_select ul.redux-image-select{
+	margin: -15px !important;
+}
+#zkerika_theme_options-zkerika_archive_content_layout.redux-container-image_select li.redux-image-select{
+	padding: 0 !important;
+	width: 50%;
+	float: left;
+}
+#zkerika_theme_options-zkerika_archive_content_layout.redux-container-image_select li.redux-image-select > label{
+	padding: 15px;
+}
+#zkerika_theme_options-zkerika_archive_content_layout.redux-container-image_select li.redux-image-select img{ max-width: calc(100% - 8px);}
+.redux-main .select2-default{width:100%!important}.select2-container-multi .select2-choices li.select2-search-field{float:none!important}.menu-item-settings{overflow: hidden;}

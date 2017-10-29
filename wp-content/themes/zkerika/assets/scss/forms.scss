@@ -1,0 +1,60 @@
+form {
+	label{
+		display: block;
+	}
+	input[type="text"],
+	input[type="mail"],
+	input[type="phone"],
+	input[type="tel"],
+	input[type="password"],
+	input[type="search"],
+	input[type="time"],
+	input[type="url"],
+	input[type="file"],
+	input[type="image"]{
+		width: 100%;
+		border: $main_border;
+		font-size: $medium_font_size;
+	}
+}
+select,
+textarea{
+	width: 100%;
+	max-width: 100%;
+}
+/* post-password-form */
+form.post-password-form{
+	input[name="post_password"]{
+		margin-bottom: 15px;
+	}
+	[for*="pwbox-"]{
+		display: inline-block;
+		+ input[type="submit"]{
+			padding: 2px 6px;
+		}
+	}
+}
+/* Place Holder Text */
+::-moz-placeholder{
+	color: $placeholder_color;
+}
+:-ms-input-placeholder {
+	color: $placeholder_color;
+}
+::-webkit-input-placeholder  {
+	color: $placeholder_color;
+}
+::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+/* for IE10+ */
+select::-ms-expand {
+    display: none;
+}
+form input::-ms-clear,
+form input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0; 
+}

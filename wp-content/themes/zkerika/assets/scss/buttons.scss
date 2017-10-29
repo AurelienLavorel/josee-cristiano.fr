@@ -1,0 +1,38 @@
+.btn,
+.btn-default,
+button,
+.button,
+input[type="button"],
+input[type="submit"]{
+	background-color: $btn_default_bg;
+	color: $btn_default_color;
+	border-style: $btn_default_border_style;
+	border-width: $btn_default_border_width;
+	border-color: $btn_default_border_color;
+	padding: 10px 20px;
+	display: inline-block;
+	cursor: pointer;
+	@include border-radius($btn_default_border_radius);
+	@include transition();
+	&:hover{
+		background-color: $btn_default_bg_hover;
+		color: $btn_default_color_hover;
+	}
+}
+
+.btn-primary{
+	background-color: $btn_primary_bg;
+	color: $btn_primary_color;
+	border-style: $btn_primary_border_style;
+	border-width: $btn_primary_border_width;
+	border-color: $btn_primary_border_color;
+	padding: 10px 20px;
+	display: inline-block;
+	cursor: pointer;
+	@include border-radius($btn_primary_border_radius);
+	@include transition();
+	&:hover{
+		background-color: $btn_primary_bg_hover;
+		color: $btn_primary_color_hover;
+	}
+}
